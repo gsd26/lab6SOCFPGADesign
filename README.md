@@ -12,14 +12,14 @@ done it yet
 
 The base distributed project for the radio peripheral laboratory
 ## Register Description
-### Register 0 (BASE+0x00): 
-Timer Register: Free-Running 32 Bit Counter. Writing to this register resets the counter back to 0. Reading from this register gives you the current free running counter
-### Register 1 (BASE+0x04): 
-ADC Phase Increment. Writing to this sets the ADC Phase Increment. Reading from this returns the ADC Phase Increment. 
-### Register 2 (BASE+0x08): 
-Tuner Phase Increment. Writing to this sets the Tuner Phase Increment. Reading from this returns the Tuner Phase Increment. 
-### Register 3 (BASE+0x12):
-Sync Reset: Writing a 0 lets the module out of reset. Writing a 1(or higher) puts it in reset. 
+### Register 0 (BASE+0x00): Timer Register 
+Free-Running 32 Bit Counter. Writing to this register resets the counter back to 0. Reading from this register gives you the current free running counter
+### Register 1 (BASE+0x04): ADC Phase Increment Register
+ Writing to this sets the ADC Phase Increment. Reading from this returns the ADC Phase Increment. 
+### Register 2 (BASE+0x08): Tuner Phase Increment Register
+Writing to this sets the Tuner Phase Increment. Reading from this returns the Tuner Phase Increment. 
+### Register 3 (BASE+0x12): Sync Reset Register
+Writing a 0 lets the module out of reset. Writing a 1(or higher) puts it in reset. 
 
 ## Serial Port Description
 115200 Baud Rate, No Parity, Use External PMOD
